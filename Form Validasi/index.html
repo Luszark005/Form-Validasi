@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Otak-Atik Form Validasi</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<center><h2>FORM REGISTRASI MAHASISWA</h2></center>
+	<div class="login">
+		<form action="#" method="POST" onSubmit="validasi()">
+			<div>
+				<label>Nama Lengkap:</label>
+				<input type="text" name="nama" id="nama" />
+			</div>
+            <div>
+				<label>NIM:</label>
+				<input type="text" name="nama" id="NIM" />
+			</div>
+			<div>
+				<label>Mata Kuliah:</label>
+				<input type="email" name="email" id="MK" />
+			</div>
+			<div>
+				<label>Dosen:</label>
+				<input type="email" name="email" id="Dosen" />
+			</div>
+			<div>
+				<input type="submit" value="Daftar" class="tombol">
+			</div>
+		</form>
+	</div>
+</body>
+<script type="text/javascript">
+	function validasi() {
+		var nama = document.getElementById("nama").value;
+		var NIM = document.getElementById("NIM").value;
+		var MK = document.getElementById("MK").value;
+		var Dosen = document.getElementById("Dosen").value;
+		if (nama != "" && NIM!="" && MK !="" && Dosen !="") 
+		{
+			return true;
+		}else{
+			alert('ISI YANG LENGKAP, WAHAI PENERUS BANGSA!!!');
+		}
+	}
+</script>
+</html>
